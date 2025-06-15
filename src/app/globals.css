@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #FF0000;
+    --color-primary-dark: #cc0000;
+    --color-tech-blue: #1E3A8A;
+    --color-tech-blue-light: #3B82F6;
+    --color-tech-dark: #0F172A;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'Roboto Mono', monospace;
+    --gradient-radial: radial-gradient(var(--tw-gradient-stops));
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Blueprint pattern background */
+.blueprint-pattern {
+    background-color: rgba(255, 255, 255, 0.97);
+    background-image:
+        linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+}
+
+.dark .blueprint-pattern {
+    background-color: rgba(15, 23, 42, 0.97);
+    background-image:
+        linear-gradient(rgba(59, 130, 246, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.07) 1px, transparent 1px);
+}
+
+/* Smooth transitions for dark mode */
+.transition-theme {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Glow effects */
+.glow {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.dark .glow {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Video card hover effects */
+.video-card {
+    transition: all 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.play-button {
+    opacity: 0.9;
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+.video-card:hover .play-button {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animated underline for nav links */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FF0000;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Custom utility classes for custom colors */
+.bg-tech-dark {
+  background-color: var(--color-tech-dark) !important;
+}
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+.bg-primary-dark {
+  background-color: var(--color-primary-dark) !important;
+}
+.text-tech-dark {
+  color: var(--color-tech-dark) !important;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-primary-dark {
+  color: var(--color-primary-dark) !important;
+}
