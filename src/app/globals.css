@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --color-primary: #FF0000;
     --color-primary-dark: #cc0000;
