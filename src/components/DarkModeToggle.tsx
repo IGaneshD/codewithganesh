@@ -5,16 +5,33 @@ export default function DarkModeToggle() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
+    const htmlEl = document.documentElement;
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      if (savedTheme === "dark") {
+        htmlEl.classList.add("dark");
+        setIsDark(true);
+      } else {
+        htmlEl.classList.remove("dark");
+        setIsDark(false);
+      }
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      htmlEl.classList.add("dark");
+      setIsDark(true);
+    } else {
+      htmlEl.classList.remove("dark");
+      setIsDark(false);
+    }
   }, []);
 
   const toggleDark = () => {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
+    const htmlEl = document.documentElement;
+    if (htmlEl.classList.contains("dark")) {
+      htmlEl.classList.remove("dark");
       localStorage.setItem("theme", "light");
       setIsDark(false);
     } else {
-      document.documentElement.classList.add("dark");
+      htmlEl.classList.add("dark");
       localStorage.setItem("theme", "dark");
       setIsDark(true);
     }

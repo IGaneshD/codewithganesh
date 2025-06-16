@@ -4,12 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@theme {
     --color-primary: #FF0000;
     --color-primary-dark: #cc0000;
     --color-tech-blue: #1E3A8A;
     --color-tech-blue-light: #3B82F6;
-    --color-tech-dark: #0F172A;
+    --color-tech-dark: rgb(15 23 42);
 
     --font-inter: 'Inter', sans-serif;
     --font-mono: 'Roboto Mono', monospace;
