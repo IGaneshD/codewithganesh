@@ -1,11 +1,11 @@
 // File: src/components/Header.tsx
-'use client'
+"use client"
 
-import '../app/globals.css';
-import { useState } from 'react'
-import { Menu, ChevronDown } from 'lucide-react'
-import Link from 'next/link'
-import DarkModeToggle from './DarkModeToggle'
+import "../app/globals.css";
+import { useState } from "react"
+import { Menu, ChevronDown } from "lucide-react"
+import Link from "next/link"
+import DarkModeToggle from "./DarkModeToggle"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)

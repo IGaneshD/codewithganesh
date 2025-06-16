@@ -51,19 +51,19 @@ export default function Hero() {
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">3</div>
-                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">'JavaScript'</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
+                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">&apos;JavaScript&apos;</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">4</div>
-                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">'React'</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
+                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">&apos;React&apos;</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">5</div>
-                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">'Node.js'</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
+                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">&apos;Node.js&apos;</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">6</div>
-                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">'Python'</span></div>
+                  <div className="pl-8"><span className="text-green-600 dark:text-green-400">&apos;Python&apos;</span></div>
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">7</div>
@@ -79,7 +79,7 @@ export default function Hero() {
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">10</div>
-                  <div className="pl-8"><span className="text-blue-600 dark:text-blue-400">learn</span><span className="text-slate-600 dark:text-slate-300">:</span> <span className="text-green-600 dark:text-green-400">'Coding Made Simple'</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
+                  <div className="pl-8"><span className="text-blue-600 dark:text-blue-400">learn</span><span className="text-slate-600 dark:text-slate-300">:</span> <span className="text-green-600 dark:text-green-400">&apos;Coding Made Simple&apos;</span><span className="text-slate-600 dark:text-slate-300">,</span></div>
                 </div>
                 <div className="flex">
                   <div className="text-slate-400 dark:text-slate-500 mr-4 select-none">11</div>

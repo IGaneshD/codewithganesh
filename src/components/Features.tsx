@@ -7,7 +7,7 @@ export default function Features() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center justify-center mb-4 bg-primary/10 dark:bg-primary/20 px-4 py-2 rounded-full">
-            <span className="text-primary font-medium text-sm">What You'll Learn</span>
+            <span className="text-primary font-medium text-sm">What You&apos;ll Learn</span>
           </div>
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Master In-Demand Skills</h2>
           <p className="text-lg text-slate-600 dark:text-slate-200">
@@ -43,27 +43,27 @@ import { Code, Database, BrainCircuit } from 'lucide-react'
 
 const featureData = [
   {
-    title: 'Web Development',
-    description: 'Master HTML, CSS, JavaScript, React, and more with hands-on projects and real-world applications.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+    title: "Web Development",
+    description: "Master HTML, CSS, JavaScript, React, and more with hands-on projects and real-world applications.",
+    tags: ["HTML5", "CSS3", "JavaScript", "React"],
     icon: Code,
-    iconColor: 'text-blue-600 dark:text-blue-400',
-    iconBg: 'bg-blue-100 dark:bg-blue-900/30',
+    iconColor: "text-blue-600 dark:text-blue-400",
+    iconBg: "bg-blue-100 dark:bg-blue-900/30",
   },
   {
-    title: 'Backend & Databases',
-    description: 'Learn server-side programming with Node.js, Python, and database management with SQL and NoSQL.',
-    tags: ['Node.js', 'Python', 'MongoDB', 'SQL'],
+    title: "Backend & Databases",
+    description: "Learn server-side programming with Node.js, Python, and database management with SQL and NoSQL.",
+    tags: ["Node.js", "Python", "MongoDB", "SQL"],
     icon: Database,
-    iconColor: 'text-green-600 dark:text-green-400',
-    iconBg: 'bg-green-100 dark:bg-green-900/30',
+    iconColor: "text-green-600 dark:text-green-400",
+    iconBg: "bg-green-100 dark:bg-green-900/30",
   },
   {
-    title: 'AI & Machine Learning',
-    description: 'Explore artificial intelligence concepts, machine learning algorithms, and practical applications.',
-    tags: ['TensorFlow', 'PyTorch', 'Data Science', 'NLP'],
+    title: "AI & Machine Learning",
+    description: "Explore artificial intelligence concepts, machine learning algorithms, and practical applications.",
+    tags: ["TensorFlow", "PyTorch", "Data Science", "NLP"],
     icon: BrainCircuit,
-    iconColor: 'text-purple-600 dark:text-purple-400',
-    iconBg: 'bg-purple-100 dark:bg-purple-900/30',
+    iconColor: "text-purple-600 dark:text-purple-400",
+    iconBg: "bg-purple-100 dark:bg-purple-900/30",
   },
 ]
